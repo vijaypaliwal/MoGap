@@ -1,16 +1,66 @@
-<!DOCTYPE html>
-
-<html lang="en">
-
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-</head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<link href="jquery-mobile/jquery.mobile-1.0a3.min.css" rel="stylesheet" type="text/css" />
+<script src="jquery-mobile/jquery-1.5.min.js" type="text/javascript"></script>
+<script src="jquery-mobile/jquery.mobile-1.0a3.min.js" type="text/javascript"></script>
+</head>
 
 <body>
+<div data-role="page" id="page">
+  <div data-role="header" data-theme="c">
+    <h1>SHIVAM ITCS</h1>
+  </div>
+  <div data-role="content" data-theme="e">
+  <div data-role="controlgroup" data-type="horizontal" >
+          <button data-icon="gear" data-theme="a">Contact</button>
+          <button data-icon="gear" data-theme="a">About</button>
+          <button data-icon="gear" data-theme="a">Product</button>         
+        </div>
+    <ul data-role="listview" data-inset="true" data-split-icon="forward">
+      <li>
+        <h3><a href="#">Page</a></h3>
+        <p>Lorem ipsum</p>
+        <span class="ui-li-count">1</span><a href="#">Default</a>
+        <p class="ui-li-aside">Aside</p>
+      </li>
+      <li>
+        <h3><a href="#">Page</a></h3>
+        <p>Lorem ipsum</p>
+        <span class="ui-li-count">1</span><a href="#">Default</a>
+        <p class="ui-li-aside">Aside</p>
+      </li>
+      <li>
+        <h3><a href="#">Page</a></h3>
+        <p>Lorem ipsum</p>
+        <span class="ui-li-count">1</span><a href="#">Default</a>
+        <p class="ui-li-aside">Aside</p>
+      </li>
+    </ul>
+    <div class="ui-grid-a">
+      <div class="ui-block-a">Sign In</div>
+      <div class="ui-block-a"><div data-role="fieldcontain">
+          <label for="textinput">Text Input:</label>
+          <input type="text" name="textinput" id="textinput" value=""  />
+        </div></div>
+      <div class="ui-block-a">
+        <div data-role="fieldcontain">
+          <label for="passwordinput">Password Input:</label>
+          <input type="password" name="passwordinput" id="passwordinput" value=""  />
+        </div>
+      </div>
+      <div class="ui-block-a">
+        <button data-icon="check" data-iconpos="right">Login</button>
+     </div>
+    </div>
 
-<h2>JAI SHRI KRISHNA</h2>
-<h3>Vijay Paliwal</h3>
-<h4>SHIVAM ITCS</h4>
+  </div>
+  <div data-role="footer" data-theme="c">
+   <p>All Rights Reserved @2013 SHIVAM ITCS</p>
+
+  </div>
+</div>
 </body>
-
-
 </html>
