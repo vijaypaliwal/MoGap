@@ -1,0 +1,46 @@
+<html xmlns:ng="http://angularjs.org" ng-app lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.1.1/css/bootstrap.no-icons.min.css" rel="stylesheet">
+        <link href="http://netdna.bootstrapcdn.com/font-awesome/2.0/css/font-awesome.css" rel="stylesheet">
+         <script src="Alljs/jquery.min.js"></script>
+        <script src="http://code.angularjs.org/1.1.0/angular.min.js"></script>
+        
+    </head>
+    <body>
+    <script type="text/javascript">
+	var table_body_html = "<table>";
+	$.ajax({
+	type: "POST",
+	url: "http://mobile.shivamitconsultancy.com/Service1.svc/AllProduct",
+	data: "",
+	datatype:"xml",
+	cache: false,
+	success: function(return_data){
+			for(var i = 0; i < return_data.length; i++) {
+				var data = return_data[i];
+
+				table_body_html += "<th><td colspan='2'></td></th>";
+
+				data.each(function(key, value) {
+
+					table_body_html += "<tr><td>"+ key +"</td><td>"+ value +"</td></tr>";
+
+				});
+			}
+			table_body_html += "</table>";
+			$("#allData").html(table_body_html);
+		}
+	});
+        
+		
+
+
+    </script>
+   
+        <div id="allData"></div>
+    </body>
+</html>
+
+
+  
